@@ -18,7 +18,7 @@ app = FastAPI(title="Heart Risk Assessment API")
 # Add CORS middleware to allow frontend requests
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:8080", "https://<your-frontend-domain>"],  # Update later if frontend is deployed
+    allow_origins=["http://localhost:8080", "https://earlymed.vercel.app"],  # Update later if frontend is deployed
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
